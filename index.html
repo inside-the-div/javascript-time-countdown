@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Timer</title>
+</head>
+<style>
+	body{
+		margin: 0px;
+		padding: 0px;
+	}
+	.stop_watch{
+		width: 50%;
+		height: 50%;
+		/*background: red;*/
+		position: fixed;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		box-shadow: 0px 0px 1px 1px #afafaf;
+	}
+	.stop_watch .output{
+		width: 100%;
+		
+		/*background: red;*/
+	}
+	.output h2{
+		margin: 0px;
+		padding: 0px;
+		text-align: center;
+		font-size: 30px;
+		margin-top: 15%;
+		margin-bottom: 10%;
+		
+	}
+	.output span{
+		font-size: 25px;
+	}
+	.stop_watch .input{
+		width: 100%;
+		height: 40%;
+		/*background: green;*/
+	}
+	.input input,button{
+		height: 35px;
+		margin: 30px 5px 0px 10px;
+		font-size: 18px;
+		text-align: center;
+		float: left;
+	}
+	.input input{
+		width: 60%;
+	}
+	.input button{
+		width: 30%;
+		height: 40px;
+	}
+</style>
+<body>
+
+
+	<div class="stop_watch">
+
+		<div class="output">
+			<h2>
+				<span id="minute">00</span> :
+				<span id="second">00</span>
+			</h2>
+		</div>
+
+
+		<div class="input">
+			<input  id="input_box" type="number" placeholder="Munite">
+
+			<button  onclick="start()">Start</button>
+		</div>
+
+
+	</div>
+
+
+
+	<script src="main.js"></script>
+</body>
+</html>
